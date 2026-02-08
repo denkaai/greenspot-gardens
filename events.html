@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Experiences | Green Sports Gardens – Weekend Vibes</title>
+    <meta name="description"
+        content="Join us for Sunset Jazz, Garden BBQ, and Acoustic Sunday Chill. Experience the best weekend vibes in Kamakis with premium drinks and food.">
+    <meta name="keywords"
+        content="Sunset Jazz, Garden BBQ, Sunday Chill, Weekend Vibes, Green Sports Gardens, Kamakis Events">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">GREEN SPORTS <span>GARDENS</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="facilities.html">Facilities</a>
+                <a href="events.html" class="active">Events</a>
+                <a href="contact.html">Contact</a>
+                <a href="#gigi" class="btn btn-primary" onclick="toggleGigi()">Talk to Gigi</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero events-hero fade-in">
+        <h1>Exclusive <span>Experiences</span></h1>
+    </header>
+
+    <section class="container fade-in">
+        <div class="section-title">
+            <h2>Our Weekly Rituals</h2>
+            <p>From sunset cocktails to weekend family feasts, discover the pulse of our garden.</p>
+        </div>
+
+        <div class="grid-3">
+            <div class="card">
+                <span class="badge" style="background: var(--primary-soft); color: var(--primary-green);">FRIDAYS</span>
+                <h3>Sunset Jazz & Mixology</h3>
+                <p>Smooth live jazz paired with our artisanal cocktail menu. The perfect start to your weekend.</p>
+                <button class="btn btn-outline" onclick="openGigi('drinks')">Reserve a Table</button>
+            </div>
+            <div class="card">
+                <span class="badge"
+                    style="background: var(--primary-soft); color: var(--primary-green);">SATURDAYS</span>
+                <h3>Garden BBQ & Grill</h3>
+                <p>Experience our master-chef's signature grilled platters with live acoustic vibes.</p>
+                <button class="btn btn-outline" onclick="openGigi('dining')">Book a Platter</button>
+            </div>
+            <div class="card">
+                <span class="badge" style="background: var(--primary-soft); color: var(--primary-green);">SUNDAYS</span>
+                <h3>Acoustic Sunday Chill</h3>
+                <p>Relaxed garden atmosphere with soulful music, craft beers, and family-friendly dining.</p>
+                <button class="btn btn-outline" onclick="openGigi('lounge')">Inquire Now</button>
+            </div>
+        </div>
+
+        <div style="margin-top: 80px;">
+            <div class="section-title">
+                <h2>Signature Sips: Weekend Vibe</h2>
+                <p>Top-tier drinks curated to elevate your weekend experience.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/image/menu/main dishes & drinks/beer-1.jpg" alt="Local Craft Beers">
+                    <div class="gallery-caption">
+                        <h4>Local Craft Selection</h4>
+                        <p>Experience the finest small-batch brews from Kenyan artisans.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/image/menu/main dishes & drinks/liqour-3.jpg" alt="Premium Gin Bar">
+                    <div class="gallery-caption">
+                        <h4>Premium Gin Bar</h4>
+                        <p>Extensive selection of global gins served with fresh garden botanicals.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/image/menu/main dishes & drinks/beer-2.jpg" alt="Draught Experience">
+                    <div class="gallery-caption">
+                        <h4>The Draught Experience</h4>
+                        <p>Perfectly poured, ice-cold draught lager for the ultimate refresh.</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/image/menu/main dishes & drinks/liqour-6.jpg" alt="Whiskey Cellar">
+                    <div class="gallery-caption">
+                        <h4>Private Whiskey Cellar</h4>
+                        <p>Explore aged single malts and premium blends in our lounge.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Green Sports Gardens. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/gigi.js"></script>
+    <script>
+        function toggleGigi() { window.gigiAssistant && window.gigiAssistant.toggleWindow(); }
+    </script>
+</body>
+
+</html>
