@@ -8,7 +8,7 @@
     <meta name="description"
         content="Experience the ultimate relaxation destination at GreenSpot Gardens. Premium garden dining and lush lounge areas in a serene nature-focused environment.">
     <meta name="keywords"
-        content="GreenSpot Gardens, Garden Lounge, Kamakis, Ruiru, Gastronomy, Relaxation">
+        content="GreenSpot Gardens, Garden Lounge, Kamakis, Ruiru, Gastronomy, Relaxation, Modern Restaurant Kiambu, Eastern Bypass Dining, Best Nyama Choma Ruiru">
     <meta name="author" content="GreenSpot Gardens">
 
     <!-- Open Graph / Facebook -->
@@ -27,6 +27,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Structured Data for Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "GreenSpot Gardens",
+      "image": "https://denkaai.github.io/greenspot-gardens/assets/image/background/home-bg-hq.webp",
+      "@id": "https://denkaai.github.io/greenspot-gardens/",
+      "url": "https://denkaai.github.io/greenspot-gardens/",
+      "telephone": "+254110057300",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Eastern Bypass, Kamakis",
+        "addressLocality": "Ruiru",
+        "addressRegion": "Kiambu",
+        "postalCode": "00232",
+        "addressCountry": "KE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -1.1643,
+        "longitude": 36.9831
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "23:00"
+      },
+      "menu": "https://denkaai.github.io/greenspot-gardens/menu.html",
+      "servesCuisine": "Kenyan, International Fusion",
+      "priceRange": "$$"
+    }
+    </script>
 </head>
 
 <body>
@@ -50,15 +93,51 @@
     <header class="hero">
         <div class="hero-content">
             <span class="badge">GASTRONOMY • NATURE • RELAXATION</span>
+            <p class="hero-subtitle">Ruiru’s Premier Garden Dining & Lifestyle Experience</p>
             <h1 class="fade-in">Where Nature Meets <span>The Flavor</span></h1>
             <p class="fade-in">Experience premium garden dining nestled in a serene natural environment. Your escape for
                 gourmet meals, signature sips, and pure relaxation.</p>
+            <p class="fade-in luxury-desc">Where nature meets elevated dining. An immersive garden ambience crafted for
+                unforgettable moments.</p>
             <div class="hero-btns fade-in">
                 <a href="javascript:void(0)" onclick="openGigi('booking')" class="btn btn-primary">Reserve a Table</a>
-                <a href="facilities.html" class="btn btn-outline">Explore Spaces</a>
+                <a href="javascript:void(0)" onclick="openGigi('events')" class="btn btn-outline">Book a Private
+                    Event</a>
             </div>
         </div>
     </header>
+
+    <!-- The GreenSpot Experience -->
+    <section class="experience-section fade-in">
+        <div class="container">
+            <div class="section-title">
+                <h2>The GreenSpot Experience</h2>
+                <p>More than just a restaurant - a lifestyle destination.</p>
+            </div>
+            <div class="experience-grid">
+                <div class="exp-item">
+                    <i class="fas fa-tree exp-icon"></i>
+                    <h4>Immersive Ambience</h4>
+                    <p>Lush gardens and serene spaces designed for pure relaxation.</p>
+                </div>
+                <div class="exp-item">
+                    <i class="fas fa-utensils exp-icon"></i>
+                    <h4>Signature Dining</h4>
+                    <p>Authentic flavors met with premium culinary craftsmanship.</p>
+                </div>
+                <div class="exp-item">
+                    <i class="fas fa-glass-martini-alt exp-icon"></i>
+                    <h4>Curated Bar</h4>
+                    <p>Expert mixology, fine wines, and chilled craft beers.</p>
+                </div>
+                <div class="exp-item">
+                    <i class="fas fa-music exp-icon"></i>
+                    <h4>Live Entertainment</h4>
+                    <p>Vibrant nights with live bands and smooth jazz sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="container fade-in">
         <div class="section-title">
@@ -94,6 +173,31 @@
                 </p>
                 <a href="javascript:void(0)" onclick="openGigi('events')" class="link">Inquire Now <i
                         class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Enhancements -->
+    <section class="container fade-in" style="margin-top: 40px;">
+        <div class="section-title">
+            <h2>Premium Features</h2>
+            <p>Designed for your comfort and enjoyment.</p>
+        </div>
+        <div class="enhancements-list">
+            <div class="enhance-card">
+                <h4>VIP Garden Pods</h4>
+            </div>
+            <div class="enhance-card">
+                <h4>Signature Cocktails</h4>
+            </div>
+            <div class="enhance-card">
+                <h4>Live Music Nights</h4>
+            </div>
+            <div class="enhance-card">
+                <h4>Event Hosting</h4>
+            </div>
+            <div class="enhance-card">
+                <h4>Smart Reservations</h4>
             </div>
         </div>
     </section>
@@ -182,6 +286,22 @@
         </div>
     </section>
 
+    <!-- Our Vision -->
+    <section class="vision-section fade-in">
+        <div class="vision-content">
+            <h2>Our Vision</h2>
+            <p class="vision-desc">Positioning GreenSpot Gardens as the premier lifestyle dining brand in the
+                fast-growing Kamakis and Eastern Bypass corridor.</p>
+            <ul class="vision-list">
+                <li class="vision-item"><i class="fas fa-check"></i> Strategic Location</li>
+                <li class="vision-item"><i class="fas fa-check"></i> High-Growth Zone</li>
+                <li class="vision-item"><i class="fas fa-check"></i> Lifestyle Dining</li>
+                <li class="vision-item"><i class="fas fa-check"></i> Event-Driven Model</li>
+                <li class="vision-item"><i class="fas fa-check"></i> Expansion Ready</li>
+            </ul>
+        </div>
+    </section>
+
     <!-- Testimonials Section -->
     <section class="container fade-in" style="margin-bottom: 40px;">
         <div class="section-title">
@@ -230,7 +350,8 @@
                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                         class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
-                <p style="font-style: italic; margin-bottom: 20px;">"Join the movement at GreenSpot Gardens. The staff and
+                <p style="font-style: italic; margin-bottom: 20px;">"Join the movement at GreenSpot Gardens. The staff
+                    and
                     Gigi make booking and coordination seamless."</p>
                 <h4 style="color: var(--primary-green);">David L.</h4>
             </div>
@@ -238,6 +359,12 @@
     </section>
 
     <footer></footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="galleryLightbox">
+        <div class="lightbox-close">&times;</div>
+        <img class="lightbox-content" id="lightboxImg">
+    </div>
 
     <!-- Custom JS -->
     <script src="js/main.js"></script>

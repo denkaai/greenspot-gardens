@@ -1052,3 +1052,298 @@ footer {
     background: #128c7e;
     transform: translateY(-2px);
 }
+
+/* =========================================
+   PREMIUM ENHANCEMENTS (ADDITIONS ONLY)
+   ========================================= */
+
+/* 1. Hero Enhancements */
+.hero-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: var(--accent-sage);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    animation: fadeIn 1.2s ease-out;
+}
+
+.hero p.luxury-desc {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: -20px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* 2. The GreenSpot Experience Section */
+.experience-section {
+    background: linear-gradient(to bottom, var(--bg-color), var(--primary-soft));
+    position: relative;
+    overflow: hidden;
+    padding: 80px 20px;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.exp-item {
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: var(--border-radius);
+    background: var(--card-bg);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.exp-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    border-color: var(--accent-sage);
+}
+
+.exp-icon {
+    font-size: 2.5rem;
+    color: var(--accent-gold);
+    margin-bottom: 25px;
+    display: inline-block;
+    padding: 20px;
+    background: rgba(197, 160, 89, 0.1);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.exp-item:hover .exp-icon {
+    background: var(--accent-gold);
+    color: white;
+    transform: rotate(10deg);
+}
+
+.exp-item h4 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--primary-green);
+    font-family: 'Playfair Display', serif;
+}
+
+.exp-item p {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+/* 3. Vision & Growth Section */
+.vision-section {
+    background-color: var(--primary-green);
+    color: white;
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.vision-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.vision-content h2 {
+    color: var(--accent-gold);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.vision-desc {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vision-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.vision-item {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vision-item i {
+    color: var(--accent-gold);
+}
+
+.vision-item:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-3px);
+}
+
+/* 4. Experience Enhancements List */
+.enhancements-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 60px;
+}
+
+.enhance-card {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    border-top: 3px solid var(--accent-gold);
+    box-shadow: var(--glass-shadow);
+    transition: var(--transition);
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.enhance-card:hover {
+    background: var(--primary-green);
+    transform: translateY(-5px);
+}
+
+.enhance-card:hover h4 {
+    color: white;
+}
+
+.enhance-card h4 {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin: 0;
+    transition: var(--transition);
+}
+
+/* 5. Lightbox Enhancements */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.98);
+    z-index: 3000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    backdrop-filter: blur(5px);
+}
+
+.lightbox.active {
+    display: flex;
+    opacity: 1;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    animation: zoomIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 3001;
+    background: rgba(255,255,255,0.1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-close:hover {
+    color: var(--accent-gold);
+    background: rgba(255,255,255,0.2);
+    transform: rotate(90deg);
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* 6. Refined Booking Form & Maps */
+.booking-form {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    padding: 50px;
+    border-radius: 24px;
+}
+
+.form-group label {
+    color: var(--primary-green);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.form-group input, .form-group select {
+    background: var(--bg-light);
+    border: 2px solid rgba(0,0,0,0.05);
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 12px;
+}
+
+.form-group input:focus, .form-group select:focus {
+    background: var(--card-bg);
+    border-color: var(--accent-gold);
+    box-shadow: 0 0 0 4px rgba(197, 160, 89, 0.15);
+}
+
+.map-section {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.map-container {
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    height: 450px;
+    width: 100%;
+    position: relative;
+    border: 5px solid var(--card-bg);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    filter: grayscale(20%) contrast(1.1); /* Slight premium styling */
+}
