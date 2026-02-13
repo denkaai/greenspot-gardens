@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Inject Components
     const navHTML = `
         <div class="nav-container">
-            <a href="index.html" class="logo">GREEN SPORTS <span>GARDENS</span></a>
+            <a href="index.html" class="logo">GREENSPOT <span>GARDENS</span></a>
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="facilities.html">Facilities</a>
                 <a href="events.html">Events</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-                <a href="#gigi" class="btn btn-primary" onclick="toggleGigi()">Talk to Gigi</a>
+                <a href="#chatbot" class="btn btn-primary" onclick="openGigi()">Talk to Gigi</a>
             </div>
             <div class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const footerHTML = `
         <div class="footer-content">
             <div class="footer-section">
-                <h3>GREEN SPORTS GARDENS</h3>
+                <h3>GREENSPOT GARDENS</h3>
                 <p>The premier garden dining and relaxation destination in Kamakis, Ruiru.</p>
             </div>
             <div class="footer-section">
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="footer-section">
                 <h3>Contact Info</h3>
                 <p><i class="fas fa-phone"></i> +254 110 057 300</p>
-                <p><i class="fas fa-envelope"></i> hello@greensportsgardens.co.ke</p>
+                <p><i class="fas fa-envelope"></i> hello@greenspotgardens.co.ke</p>
                 <div class="social-links">
                     <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
                     <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Green Sports Gardens. All rights reserved.</p>
+            <p>Designed and Developed by denkaai 2026</p>
         </div>
     `;
 
@@ -68,8 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
     waFloat.innerHTML = '<i class="fab fa-whatsapp"></i>';
     document.body.appendChild(waFloat);
 
-    // Background Music
-    const audio = new Audio('https://www.bensound.com/bensound-music/bensound-jazzyfrenchy.mp3');
+    // Background Music - Updated to Kenny Rogers vibes
+    const audio = new Audio('https://www.bensound.com/bensound-music/bensound-jazzyfrenchy.mp3'); // Keeping placeholder for now, updating vibe labels
     audio.loop = true;
     audio.volume = 0.5;
 

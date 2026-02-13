@@ -615,5 +615,9 @@
         }
     }
 
+    // Export to window for external triggers
+    window.toggleChat = toggleChat;
+    window.handleUserMessage = handleUserMessage;
+
     init();
 })();
